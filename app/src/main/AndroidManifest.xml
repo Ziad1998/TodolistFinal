@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.todolistfinal">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.activity.expenses.HomePage"></activity>
+        <activity android:name=".ui.activity.todolist.ChooserActivity" />
+        <activity android:name=".ui.activity.expenses.home" />
+        <activity android:name=".ui.activity.expenses.SearchActivity" />
+        <activity android:name=".ui.activity.expenses.StatisticsActivity" />
+        <activity android:name=".ui.activity.expenses.AddActivity" />
+        <activity android:name=".ui.activity.todolist.loginScreen" />
+        <activity android:name=".ui.activity.todolist.MainActivity" />
+        <activity android:name=".ui.activity.stopwatch.StopWatch" />
+        <activity android:name=".ui.activity.stopwatch.StopWatchEnd" />
+
+        <activity android:name=".ui.activity.todolist.splash_screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.todolist.addTask" />
+        <activity android:name=".ui.activity.todolist.register" />
+    </application>
+
+</manifest>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#211D44"
+android:orientation="vertical"
+    tools:context=".ui.activity.stopwatch.StopWatch">
+
+    <ImageView
+        android:id="@+id/ivSplash"
+        android:layout_width="@dimen/_340sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/icget"
+        app:layout_constraintBottom_toTopOf="@+id/tvSplash"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:layout_gravity="center"
+
+        android:id="@+id/tvSplash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop Watch Tracker"
+        android:layout_marginTop="@dimen/_35sdp"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="@dimen/_30sdp"
+       />
+
+    <TextView
+android:layout_gravity="center"        android:id="@+id/tvSubSplash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="@dimen/_5sdp"
+        android:text="Track Your Health By \nPlayning This Stopwatch \n And Calculate Your Workout"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+  />
+
+
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/btnget"
+        android:layout_width="@dimen/_160sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_marginStart="@dimen/_55sdp"
+        android:layout_marginEnd="@dimen/_55sdp"
+        android:background="#FF21AA9A"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="Get Started"
+        android:textAllCaps="false"
+        android:textColor="#FFF"
+        android:textSize="20sp"
+ />
+
+</LinearLayout>

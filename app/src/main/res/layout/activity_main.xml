@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.todolist.MainActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ProgressBar
+        android:id="@+id/prog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/parent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/babyblue"
+
+        android:orientation="vertical"
+      >
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Note to Delete task , You have to click on it"
+    android:textSize="@dimen/_15sdp"
+    android:layout_marginTop="@dimen/_16sdp"
+    android:layout_marginHorizontal="@dimen/_4sdp"
+    android:drawableLeft="@drawable/ic_notify"
+    ></TextView>
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_50sdp"
+    android:background="#000"
+    android:text="Add Task"
+    android:id="@+id/taskadd"
+    android:textStyle="bold"
+    android:padding="@dimen/_10sdp"
+    android:textSize="@dimen/_22sdp"
+    android:layout_marginTop="@dimen/_10sdp"
+
+  android:textColor="@color/white">
+
+</Button>
+
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_marginVertical="@dimen/_10sdp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/recyclerViewLists"
+    ></androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".addTask"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_margin="@dimen/_16sdp"
+        android:text="Add New Task"
+        android:gravity="center"
+        android:background="#89CFF0"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="@dimen/_20sdp"
+        android:padding="@dimen/_10sdp">
+
+
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/_16sdp"
+        >
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_margin="@dimen/_10sdp"
+                android:text="task"
+                android:textColor="#000"
+                ></TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4">
+
+            <EditText
+                android:id="@+id/task"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_margin="@dimen/_10sdp"
+                android:hint="task"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                ></EditText>
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/_16sdp"
+        >
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_margin="@dimen/_10sdp"
+                android:text="Description"
+                android:textColor="#000"
+                ></TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4">
+
+            <EditText
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_margin="@dimen/_10sdp"
+                android:hint="Description"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                ></EditText>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="SELECT DATE"
+        android:id="@+id/btn_date"
+        android:layout_alignBottom="@+id/in_date"
+        android:layout_toRightOf="@+id/in_date"
+        android:layout_toEndOf="@+id/in_date" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="2">
+
+
+
+            <Button
+                android:id="@+id/canceeel"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="@drawable/background_btn"
+                android:text="Cancel"
+                android:textSize="@dimen/_20sdp"
+                android:textAllCaps="false"
+                android:layout_margin="@dimen/_10sdp"
+                android:textStyle="bold"></Button>
+        </RelativeLayout>
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="2">
+
+
+
+            <Button
+                android:id="@+id/saveee"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="@drawable/background_btn"
+                android:text="Save"
+                android:textSize="@dimen/_20sdp"
+                android:textAllCaps="false"
+                android:layout_margin="@dimen/_10sdp"
+                android:textStyle="bold"></Button>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
